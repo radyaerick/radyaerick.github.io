@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Batik Indonesia - Warisan Budaya Nusantara</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body class="bg-amber-50">
+    <!-- Navigation -->
+    <nav class="bg-amber-900 text-amber-50 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-palette text-2xl text-amber-200"></i>
+                    <span class="font-serif text-2xl font-bold">Batik Nusantara</span>
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-amber-200 transition duration-300 font-medium">Home</a>
+                    <a href="#about" class="hover:text-amber-200 transition duration-300 font-medium">Tentang Batik</a>
+                    <a href="#history" class="hover:text-amber-200 transition duration-300 font-medium">Sejarah</a>
+                    <a href="#gallery" class="hover:text-amber-200 transition duration-300 font-medium">Galeri</a>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-amber-50">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden bg-amber-800 hidden">
+        <div class="px-6 py-4 space-y-4">
+            <a href="#home" class="block text-amber-50 hover:text-amber-200">Home</a>
+            <a href="#about" class="block text-amber-50 hover:text-amber-200">Tentang Batik</a>
+            <a href="#history" class="block text-amber-50 hover:text-amber-200">Sejarah</a>
+            <a href="#gallery" class="block text-amber-50 hover:text-amber-200">Galeri</a>
+        </div>
+    </div>
+
+    <!-- Hero Banner Slider -->
+    <section id="home" class="relative">
+        <div class="slider-container overflow-hidden">
+            <div class="slider-track flex transition-transform duration-500">
+                <!-- Slide 1 -->
+                <div class="slider-slide min-w-full">
+                    <div class="relative h-96 md:h-screen/2 bg-gradient-to-r from-amber-900 to-amber-700">
+                        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+                        <div class="relative container mx-auto px-6 h-full flex items-center">
+                            <div class="text-amber-50 max-w-2xl">
+                                <h1 class="font-serif text-4xl md:text-6xl font-bold mb-4">Warisan Budaya Indonesia</h1>
+                                <p class="text-xl mb-8">Jelajahi keindahan dan makna filosofis di balik setiap motif batik Nusantara</p>
+                                <a href="#gallery" class="bg-amber-200 text-amber-900 px-8 py-3 rounded-lg font-semibold hover:bg-amber-300 transition duration-300">
+                                    Jelajahi Koleksi
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 2 -->
+                <div class="slider-slide min-w-full">
+                    <div class="relative h-96 md:h-screen/2 bg-gradient-to-r from-amber-800 to-amber-600">
+                        <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+                        <div class="relative container mx-auto px-6 h-full flex items-center">
+                            <div class="text-amber-50 max-w-2xl">
+                                <h2 class="font-serif text-4xl md:text-6xl font-bold mb-4">Kearifan Lokal</h2>
+                                <p class="text-xl mb-8">Setiap daerah memiliki cerita dan karakteristik batik yang unik</p>
+                                <a href="#about" class="bg-amber-200 text-amber-900 px-8 py-3 rounded-lg font-semibold hover:bg-amber-300 transition duration-300">
+                                    Pelajari Lebih Lanjut
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slider Controls -->
+        <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-3">
+            <button class="slider-dot w-3 h-3 rounded-full bg-amber-200 bg-opacity-50 hover:bg-opacity-100 transition duration-300"></button>
+            <button class="slider-dot w-3 h-3 rounded-full bg-amber-200 bg-opacity-50 hover:bg-opacity-100 transition duration-300"></button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-amber-900 mb-4">Tentang Batik Indonesia</h2>
+                <div class="w-24 h-1 bg-amber-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-gray-700 text-lg mb-6">
+                        Batik Indonesia merupakan warisan budaya tak benda yang diakui UNESCO sejak 2009. 
+                        Kain batik tidak hanya sekadar kain bermotif, tetapi mengandung nilai filosofis 
+                        dan cerita kehidupan yang mendalam.
+                    </p>
+                    <p class="text-gray-700 text-lg mb-6">
+                        Setiap goresan canting dan tetesan malam pada kain mori memiliki makna tersendiri, 
+                        mencerminkan kearifan lokal dan identitas budaya masing-masing daerah.
+                    </p>
+                    <div class="bg-amber-100 p-6 rounded-lg">
+                        <h3 class="font-serif text-xl font-bold text-amber-900 mb-3">Jenis-Jenis Batik</h3>
+                        <ul class="text-gray-700 space-y-2">
+                            <li class="flex items-center">
+                                <i class="fas fa-star text-amber-600 mr-3"></i>
+                                Batik Tulis - Dibuat secara manual dengan canting
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-star text-amber-600 mr-3"></i>
+                                Batik Cap - Menggunakan cap tembaga untuk efisiensi
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-star text-amber-600 mr-3"></i>
+                                Batik Kombinasi - Perpaduan teknik tulis dan cap
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-amber-200 p-4 rounded-lg text-center">
+                        <i class="fas fa-history text-4xl text-amber-700 mb-3"></i>
+                        <h4 class="font-bold text-amber-900">Sejarah Panjang</h4>
+                        <p class="text-sm text-amber-800">Warisan turun temurun sejak kerajaan Majapahit</p>
+                    </div>
+                    <div class="bg-amber-200 p-4 rounded-lg text-center">
+                        <i class="fas fa-map-marked-alt text-4xl text-amber-700 mb-3"></i>
+                        <h4 class="font-bold text-amber-900">Beragam Daerah</h4>
+                        <p class="text-sm text-amber-800">Setiap daerah memiliki motif khasnya sendiri</p>
+                    </div>
+                    <div class="bg-amber-200 p-4 rounded-lg text-center">
+                        <i class="fas fa-palette text-4xl text-amber-700 mb-3"></i>
+                        <h4 class="font-bold text-amber-900">Teknik Unik</h4>
+                        <p class="text-sm text-amber-800">Proses pembuatan yang penuh ketelitian</p>
+                    </div>
+                    <div class="bg-amber-200 p-4 rounded-lg text-center">
+                        <i class="fas fa-award text-4xl text-amber-700 mb-3"></i>
+                        <h4 class="font-bold text-amber-900">Pengakuan Dunia</h4>
+                        <p class="text-sm text-amber-800">Diakui UNESCO sebagai warisan budaya</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section id="history" class="py-20 bg-amber-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-amber-900 mb-4">Sejarah Batik Indonesia</h2>
+                <div class="w-24 h-1 bg-amber-600 mx-auto"></div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-2xl shadow-xl p-8">
+                    <div class="prose prose-lg max-w-none text-gray-700">
+                        <p class="text-lg mb-6">
+                            Batik telah menjadi bagian dari budaya Indonesia sejak abad ke-17, 
+                            dengan bukti sejarah menunjukkan keberadaannya pada masa Kerajaan Majapahit.
+                        </p>
+                        
+                        <h3 class="font-serif text-2xl font-bold text-amber-900 mt-8 mb-4">Perkembangan Batik</h3>
+                        <p class="mb-6">
+                            Awalnya, batik hanya dikerjakan terbatas dalam lingkungan keraton dan 
+                            menjadi pakaian raja, keluarga, serta pengikutnya. Namun seiring waktu, 
+                            seni batik mulai ditiru oleh rakyat biasa dan meluas menjadi pekerjaan 
+                            kaum wanita untuk mengisi waktu senggang.
+                        </p>
+                        
+                        <h3 class="font-serif text-2xl font-bold text-amber-900 mt-8 mb-4">Era Modernisasi</h3>
+                        <p class="mb-6">
+                            Pada abad ke-20, dengan diperkenalkannya batik cap, produksi batik 
+                            menjadi lebih efisien dan dapat dijangkau oleh berbagai kalangan. 
+                            Inovasi terus berkembang dengan munculnya batik printing yang 
+                            memungkinkan produksi massal.
+                        </p>
+                        
+                        <div class="bg-amber-50 p-6 rounded-lg border-l-4 border-amber-600 mt-8">
+                            <h4 class="font-serif text-xl font-bold text-amber-900 mb-2">Pengakuan UNESCO</h4>
+                            <p class="text-amber-800">
+                                Pada 2 Oktober 2009, UNESCO menetapkan batik Indonesia sebagai 
+                                Warisan Kemanusiaan untuk Budaya Lisan dan Nonbendawi. Sejak saat itu, 
+                                tanggal 2 Oktober diperingati sebagai Hari Batik Nasional.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-amber-900 mb-4">Galeri Batik Indonesia</h2>
+                <div class="w-24 h-1 bg-amber-600 mx-auto"></div>
+                <p class="text-gray-600 text-lg mt-4 max-w-2xl mx-auto">
+                    Koleksi motif batik dari berbagai daerah di Indonesia, masing-masing dengan cerita dan makna filosofisnya
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Batik Items -->
+                <!-- Item 1 -->
+                <div class="bg-amber-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 group">
+                    <div class="relative overflow-hidden">
+                        <img src="gambar/Gambar WhatsApp 2025-09-30 pukul 07.15.22_d2d39c9f 1.jpg" 
+                             alt="Batik Parang" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-4 right-4 bg-amber-600 text-amber-50 px-3 py-1 rounded-full text-sm font-semibold">
+                            Jawa Tengah
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl font-bold text-amber-900 mb-2">Batik Parang</h3>
+                        <p class="text-gray-600 mb-4">Motif lereng yang melambangkan kesinambungan dan tidak pernah putus...</p>
+                        <button onclick="openProductModal('Batik Parang')" 
+                                class="w-full bg-amber-100 text-amber-800 py-2 rounded-lg font-semibold hover:bg-amber-200 transition duration-300">
+                            Lihat Detail
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="bg-amber-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 group">
+                    <div class="relative overflow-hidden">
+                        <img src="gambar/Gambar WhatsApp 2025-09-30 pukul 07.15.22_9d2e3fd0 2.jpg" 
+                             alt="Batik Mega Mendung" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-4 right-4 bg-amber-600 text-amber-50 px-3 py-1 rounded-full text-sm font-semibold">
+                            Cirebon
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl font-bold text-amber-900 mb-2">Batik Mega Mendung</h3>
+                        <p class="text-gray-600 mb-4">Motif awan yang melambangkan kesabaran dan tidak mudah marah...</p>
+                        <button onclick="openProductModal('Batik Mega Mendung')" 
+                                class="w-full bg-amber-100 text-amber-800 py-2 rounded-lg font-semibold hover:bg-amber-200 transition duration-300">
+                            Lihat Detail
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="bg-amber-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 group">
+                    <div class="relative overflow-hidden">
+                        <img src="gambar/Cuplikan layar 2025-09-30 074414 rai.png" 
+                             alt="Batik Kawung" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-4 right-4 bg-amber-600 text-amber-50 px-3 py-1 rounded-full text-sm font-semibold">
+                            Yogyakarta
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl font-bold text-amber-900 mb-2">Batik Kawung</h3>
+                        <p class="text-gray-600 mb-4">Motif geometris bulatan seperti buah kawung (sejenis kelapa)...</p>
+                        <button onclick="openProductModal('Batik Kawung')" 
+                                class="w-full bg-amber-100 text-amber-800 py-2 rounded-lg font-semibold hover:bg-amber-200 transition duration-300">
+                            Lihat Detail
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Add more batik items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-amber-900 text-amber-50 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-palette text-2xl text-amber-200"></i>
+                        <span class="font-serif text-2xl font-bold">Batik Nusantara</span>
+                    </div>
+                    <p class="text-amber-200">
+                        Melestarikan dan mempromosikan warisan budaya batik Indonesia kepada dunia.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-serif text-lg font-bold mb-4">Quick Links</h4>
+                    <div class="space-y-2">
+                        <a href="#home" class="block text-amber-200 hover:text-white transition duration-300">Home</a>
+                        <a href="#about" class="block text-amber-200 hover:text-white transition duration-300">Tentang Batik</a>
+                        <a href="#history" class="block text-amber-200 hover:text-white transition duration-300">Sejarah</a>
+                        <a href="#gallery" class="block text-amber-200 hover:text-white transition duration-300">Galeri</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-serif text-lg font-bold mb-4">Kontak</h4>
+                    <div class="space-y-2 text-amber-200">
+                        <p class="flex items-center">
+                            <i class="fas fa-envelope mr-3"></i>
+                            info@batiknusantara.id
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-phone mr-3"></i>
+                            +62 21 1234 5678
+                        </p>
+                        <div class="flex space-x-4 mt-4">
+                            <a href="#" class="text-amber-200 hover:text-white transition duration-300">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                            <a href="#" class="text-amber-200 hover:text-white transition duration-300">
+                                <i class="fab fa-facebook text-xl"></i>
+                            </a>
+                            <a href="#" class="text-amber-200 hover:text-white transition duration-300">
+                                <i class="fab fa-twitter text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-amber-700 mt-8 pt-8 text-center text-amber-200">
+                <p>&copy; 2024 Batik Nusantara. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Product Modal -->
+    <div id="productModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4">
+        <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="font-serif text-2xl font-bold text-amber-900" id="modalTitle">Batik Parang</h3>
+                    <button onclick="closeProductModal()" class="text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <img id="modalImage" src="https://images.unsplash.com/photo-1583778176476-4a8b4757877f?w=500&h=500&fit=crop" 
+                             alt="Batik Detail" class="w-full rounded-lg shadow-lg">
+                    </div>
+                    
+                    <div>
+                        <div class="mb-6">
+                            <h4 class="font-bold text-gray-800 mb-2">Deskripsi Motif</h4>
+                            <p id="modalDescription" class="text-gray-600">
+                                Motif Parang merupakan salah satu motif batik tertua di Indonesia. 
+                                Bentuknya yang menyerupai huruf "S" yang saling berkaitan melambangkan 
+                                kesinambungan hidup dan tidak pernah putus. Motif ini awalnya hanya 
+                                boleh digunakan oleh kalangan keraton.
+                            </p>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-bold text-gray-800 mb-2">Makna Filosofis</h4>
+                            <p id="modalPhilosophy" class="text-gray-600">
+                                Melambangkan petunjuk jalan menuju kebenaran dan kesempurnaan. 
+                                Juga menggambarkan hubungan yang harmonis antara manusia dengan 
+                                Tuhan, manusia dengan manusia, dan manusia dengan alam.
+                            </p>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-bold text-gray-800 mb-2">Daerah Asal</h4>
+                            <p id="modalOrigin" class="text-gray-600">Jawa Tengah, khususnya Solo dan Yogyakarta</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-2">Warna Dominan</h4>
+                            <div class="flex space-x-2">
+                                <div class="w-8 h-8 bg-amber-600 rounded-full border"></div>
+                                <div class="w-8 h-8 bg-brown-800 rounded-full border"></div>
+                                <div class="w-8 h-8 bg-white rounded-full border"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Banner Slider
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slider-slide');
+        const dots = document.querySelectorAll('.slider-dot');
+        const track = document.querySelector('.slider-track');
+
+        function showSlide(index) {
+            if (index >= slides.length) index = 0;
+            if (index < 0) index = slides.length - 1;
+            
+            currentSlide = index;
+            track.style.transform = `translateX(-${currentSlide * 100}%)`;
+            
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('bg-opacity-100', i === currentSlide);
+                dot.classList.toggle('bg-opacity-50', i !== currentSlide);
+            });
+        }
+
+        dots.forEach((dot, i) => {
+            dot.addEventListener('click', () => showSlide(i));
+        });
+
+        // Auto slide every 5 seconds
+        setInterval(() => showSlide(currentSlide + 1), 5000);
+
+        // Product Modal Functions
+        function openProductModal(productName) {
+            const modal = document.getElementById('productModal');
+            const title = document.getElementById('modalTitle');
+            
+            title.textContent = productName;
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeProductModal() {
+            const modal = document.getElementById('productModal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('productModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeProductModal();
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
